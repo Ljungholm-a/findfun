@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find me fun!</title>
+    <link rel="stylesheet" href="home.css">
+  
+  </head>
+  <body>
+    <h1><b>Find something fun to do!</b></h1>
+    <div id="mainBody">
+      <div id="bodyDiv1">
+
+
+
+<p><b>What type of activity?</b></p>
+<div id="radioDiv">
+    <div id="one">
+    <label for="recreational">
+<input type="radio" id="recreational" value="recreational" name="typeAttr"></radioButton>
+recreational</label>
+<label for="social">
+<input type="radio" id="social" value="social" name="typeAttr"></radioButton>
+social      </label>
+<label for="busywork">
+<input type="radio" id="busywork" value="busywork" name="typeAttr"></radioButton>
+busywork    </label>
+<label for="education">
+<input type="radio" id="education" value="education" name="typeAttr"></radioButton>
+education   </label>
+<label for="relaxation">
+<input type="radio" id="relaxation" value="relaxation" name="typeAttr"></radioButton>
+relaxation  </label>
+</div>
+<div id="two">
+<label for="charity">
+<input type="radio" id="charity" value="charity" name="typeAttr"></radioButton>
+charity      </label>
+<label for="music">
+<input type="radio" id="music" value="music" name="typeAttr"></radioButton>
+music       </label>
+<label for="DIY">
+<input type="radio" id="DIY" value="diy" name="typeAttr"></radioButton>
+DIY         </label>
+<label for="music">
+<input type="radio" id="whatever" value="whatever" name="typeAttr"></radioButton>
+whatever     </label>
+
+</div>
+</div>
+
+<div id="pay">
+
+<p> <b>How much do you wish to pay?</b></p>
+<div class="slidecontainer">
+    <input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" id="myRange">
+    <p id="slideout"></p>
+  </div>
+
+</div>
+
+<div id ="participants">
+
+ <p><b>How many participant?</b></p>
+ <input type="number" id="noParticipants" min="1" max="100" value="1"> 
+</div>
+
+</div>
+<div id="bodyDiv2">
+ <div id="buttonDiv">
+
+
+ <button id="funButton" class="button">Find me fun!</button>
+
+ <button id ="randButton" class="button">Random fun</button>
+
+</div>
+
+ <div id="actRes">
+ <p id="myActivity"></p>
+</div>
+
+
+</div>
+
+</div>
+
+<script src="home.js"></script> 
+</body>
+</html>

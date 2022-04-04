@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #d3d3d3;
+}
+
+body h1 {
+  text-align: center;
+}
+
+#mainBody {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  background-color: #cab7b9;
+  border-radius: 2vw;
+}
+
+#bodyDiv1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vw;
+}
+#bodyDiv2 {
+  display: grid;
+  height: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vw;
+  grid-template-rows: 60% auto;
+}
+
+h1 {
+  color: #81383e;
+  letter-spacing: 1vw;
+}
+
+#actRes {
+  display: none;
+  background-color: #aa989a;
+  padding: 1em;
+  border-radius: 2em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+}
+
+#one label {
+  display: block;
+}
+#two label {
+  display: block;
+}
+
+#radioDiv {
+  margin-right: -27%;
+  margin-bottom: 2em;
+  display: grid;
+  grid-template-columns: 54% 45%;
+  padding: 0.5em;
+  text-align: left;
+  margin-left: -10%;
+
+}
+
+#radioDiv input {
+  height: 1.7em;
+  width: 1.7em;
+  margin: 0.3em;
+  padding-top: 0.5em;
+  accent-color: #81383e;
+}
+
+#radioDiv input:hover {
+  height: 1.71em;
+  width: 1.71em;
+  cursor: pointer;
+}
+
+#radioDiv label{
+  padding-bottom: 0.2em;
+  justify-items: first baseline;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 1rem;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 3em;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #81383e;
+  cursor: pointer;
+  border-radius: 3em;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #81383e;
+  cursor: pointer;
+  border-radius: 3em;
+}
+
+#noParticipants {
+  height: 2rem;
+  border-radius: 2rem;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+  border-color: #d3d3d3;
+  padding-left: 7%;
+  padding-right: 7%;
+  width: 17%;
+}
+
+#noParticipants:focus {
+  accent-color: #81383e;
+}
+
+#noParticipants input[type="number"] {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button {
+  border-radius: 2em;
+  border: 2px;
+  border-color: #81383e;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  background-color: none;
+  margin: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.3vw;
+  transition: all 0.3 ease;
+}
+
+.button:hover {
+  background-color: #81383e;
+  cursor: pointer;
+  color: #fff;
+}
+
+#buttonDiv {
+  margin-bottom: 2.5em;
+}
+
+@media only screen and (max-width: 650px) {
+  #mainBody {
+    display: block;
+    width: 90%;
+    padding: 2vw;
+  }
+
+  #buttonDiv {
+    margin: auto;
+  }
+
+  #bodyDiv2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
+
+  #radioDiv {
+    margin-right: auto;
+    margin-left: auto;
+  
+  }
+}
